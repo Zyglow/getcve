@@ -29,10 +29,11 @@ consume = requests.get(url)
 # Convert JSON to dict
 payload = consume.json()
 
-print('ID: ', payload['id'])
+print('\nID: ', payload['id'])
 print('Published: ', payload['Published'])
 print('CVSS Score: ', payload['cvss'])
 print('Impact: ', payload['impact'])
-print('Summary: ', payload['summary'])
+print('\nSummary: ', payload['summary'])
+print(' ')
 
 sys.exit()
